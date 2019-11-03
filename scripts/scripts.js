@@ -144,20 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	createProduto(listaProdutos);
 });
 
-window.onscroll = function() { scrollHeader() };
-
-const header = document.querySelector('#heading');
-
-const sticky = header.offsetTop;
-
-function scrollHeader() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("logo-sticky");
-  } else {
-    header.classList.remove("logo-sticky");
-  }
-}
-
 $(window).on("load",function() {
 	function fade(pageLoad) {
 		var windowTop=$(window).scrollTop(), windowBottom=windowTop+$(window).innerHeight();
