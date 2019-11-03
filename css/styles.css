@@ -4,7 +4,7 @@
 	color: #01142F;
 }
 
-body {
+html {
  	background-image: url(../images/overlay.jpg);
  	background-position: top center;
  	background-repeat: no-repeat;
