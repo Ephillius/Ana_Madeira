@@ -1,0 +1,177 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	color: #01142F;
+}
+
+body {
+ 	background-image: url(../images/overlay.jpg);
+ 	background-position: top center;
+ 	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	text-align: center;
+}
+
+#home {
+	background-image: url(../images/background.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+}
+
+.logo {
+	margin: 33vh auto;
+    width: 90%;
+    transition: width 0.4s;
+}
+
+@media screen and (min-width: 768px) {
+	.logo {
+		margin: 30vh auto;
+	}
+}
+
+.logo-sticky {
+	position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0;
+    height: 60px;
+    z-index: 10;
+    background-color: #8872B4;
+    border-bottom: solid 5px #F39629;
+}
+
+#about,
+#products,
+#contacts {
+	margin: 0 10px;
+}
+
+#about {
+	position: relative;
+    bottom: 40px;
+    border-top: solid 5px #F39629;
+	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0% 0%);
+}
+
+.about-card {
+	padding: 100px 10px;
+	background-color: white;	
+	margin: 0 auto 20px;
+	max-width: 500px;
+}
+
+#about .heart {
+	width: 10%;
+	margin-top: 10px;
+}
+
+#products {
+	padding: 20px 0;
+}
+
+h2 {
+	font-family: 'Nunito Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+    color: white;
+    margin: 70px auto 50px;
+}
+
+.card,
+.contact-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto 20px;
+	max-width: 500px;
+	opacity: 1;
+}
+
+.frame-right,
+.frame-left {
+	width: 60%;
+	position: relative;
+}
+
+.frame-right {
+	left: 40px;
+    top: 30px;
+}
+
+.frame-left {
+	right: 40px;
+    top: 30px;
+}
+
+.thumb {
+	display: block;
+    width: 100%;
+}
+
+.info {
+	display: block;
+	background-color: white;
+	padding: 60px 10px 30px;
+	border-top: solid 5px #F39629;
+}
+
+.info h3,
+.price {
+	font-family: 'Nunito Sans', sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+.info h3 {
+	font-size: 1.6em;
+}
+
+.description {
+	font-family: 'Roboto', sans-serif;
+	margin: 7px 0 15px;
+}
+
+.price {
+	font-size: 1.2em;
+	color: #F39629;
+}
+
+.contact-card {
+	background-color: white;
+	border-top: solid 5px #F39629;
+}
+
+.phone,
+.email {
+	display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    justify-content: center;
+}
+
+.phone h3,
+.email h3 {
+	margin-bottom: 0;
+}
+
+footer {
+	margin: 20px auto;
+}
+
+footer span {
+	color: #FEFCFB;
+    font-size: 10px;
+}
+
+
+
