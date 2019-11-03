@@ -46,35 +46,6 @@ html {
 	}
 }
 
-.logo-sticky {
-	position: fixed;
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 10px 0;
-    height: 60px;
-    z-index: 10;
-    background-color: #8872B4;
-    border-bottom: solid 5px #F39629;
-}
-@media screen and (min-width: 768px) {
-	.logo-sticky {
-	    height: 80px;
-	}
-}
-
-@media screen and (min-width: 1024px) {
-	.logo-sticky {
-	    width: 80%;
-	    height: 100px;
-	}
-}
-
-
 #about,
 #products,
 #contacts {
