@@ -17,12 +17,19 @@ html {
 	text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+	main {
+		margin: 0 auto;
+    	width: 80%;
+    	max-width: 1000px;
+	}
+}
+
 #home {
 	background-image: url(../images/background.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
 	height: 100vh;
 }
 
@@ -46,6 +53,7 @@ html {
     left: 0;
     bottom: 0;
     width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 10px 0;
     height: 60px;
@@ -53,12 +61,26 @@ html {
     background-color: #8872B4;
     border-bottom: solid 5px #F39629;
 }
+@media screen and (min-width: 768px) {
+	.logo-sticky {
+	    height: 80px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.logo-sticky {
+	    width: 80%;
+	    height: 100px;
+	}
+}
+
 
 #about,
 #products,
 #contacts {
 	width: 90%;
     margin: 0 auto;
+    max-width: 800px;
 }
 
 @media screen and (min-width: 768px) {
@@ -66,6 +88,14 @@ html {
 	#products,
 	#contacts {
 		width: 70%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	#about,
+	#products,
+	#contacts {
+		width: 90%;
 	}
 }
 
@@ -84,14 +114,26 @@ html {
 }
 
 .about-card {
-	padding: 100px 10px;
+	padding: 100px 20px;
 	background-color: white;	
 	margin: 0 auto 20px;
+}
+
+@media screen and (min-width: 1024px) {
+	.about-card {
+		padding: 100px 50px;
+	}
 }
 
 #about .heart {
 	width: 10%;
 	margin-top: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+	#about .heart {
+		width: 5%;
+	}
 }
 
 #products {
@@ -106,6 +148,13 @@ h2 {
     color: white;
     margin: 70px auto 50px;
 }
+
+@media screen and (min-width: 1024px) {
+	h2 {
+		font-size: 2em;
+	}
+}
+
 
 .card,
 .contact-card {
@@ -124,6 +173,13 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 1024px) {
+	.card {
+		align-items: initial;
+		margin-bottom: 20px;
+	}
+}
+
 .frame-right,
 .frame-left {
 	width: 60%;
@@ -133,20 +189,20 @@ h2 {
 @media screen and (min-width: 768px) {
 	.frame-right,
 	.frame-left {
-		width: 60%;
 		position: static;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.frame-right,
+	.frame-left {
+		width: 30%;
 	}
 }
 
 .frame-right {
 	left: 40px;
     top: 30px;
-}
-
-@media screen and (min-width: 768px) {
-	.frame-right {
-		order: 2;
-	}
 }
 
 .frame-left {
@@ -156,7 +212,7 @@ h2 {
 
 @media screen and (min-width: 768px) {
 	.frame-left {
-
+		order: 1;
 	}
 }
 
@@ -172,6 +228,15 @@ h2 {
 	border-top: solid 5px #F39629;
 	width: 100%;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+	.info {
+		display: flex;
+	    flex-flow: column wrap;
+	    justify-content: center;
+	    padding: 0 20px;
+	}
 }
 
 .info h3,
@@ -223,8 +288,6 @@ footer {
 
 footer span {
 	color: #FEFCFB;
-    font-size: 10px;
+    font-size: .7em;
 }
-
-
 
