@@ -75,6 +75,7 @@ html {
     bottom: 40px;
     margin: 0 auto;
     border-top: solid 5px #F39629;
+    -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0% 0%);
 	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0% 0%);
 }
 
