@@ -4,9 +4,14 @@
 	color: #01142F;
 }
 
+a {
+	text-decoration: none;
+}
+
 html {
  	background-image: url(../images/overlay.jpg);
- 	background-position: top center;
+ 	background-position: center;
+ 	background-size: cover;
  	background-repeat: no-repeat;
 	background-attachment: fixed; 
 	text-align: center;
@@ -30,6 +35,7 @@ html {
 @media screen and (min-width: 768px) {
 	.logo {
 		margin: 30vh auto;
+		width: 70%;
 	}
 }
 
@@ -51,21 +57,36 @@ html {
 #about,
 #products,
 #contacts {
-	margin: 0 10px;
+	width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+	#about,
+	#products,
+	#contacts {
+		width: 70%;
+	}
 }
 
 #about {
 	position: relative;
     bottom: 40px;
+    margin: 0 auto;
     border-top: solid 5px #F39629;
 	clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0% 0%);
+}
+
+@media screen and (min-width: 768px) {
+	#about {
+		bottom: 60px;
+	}
 }
 
 .about-card {
 	padding: 100px 10px;
 	background-color: white;	
 	margin: 0 auto 20px;
-	max-width: 500px;
 }
 
 #about .heart {
@@ -93,8 +114,14 @@ h2 {
 	justify-content: space-around;
 	align-items: center;
 	margin: 0 auto 20px;
-	max-width: 500px;
-	opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+	.card {
+		flex-direction: row;
+		align-items: flex-start;
+		margin-bottom: 50px;
+	}
 }
 
 .frame-right,
@@ -103,14 +130,34 @@ h2 {
 	position: relative;
 }
 
+@media screen and (min-width: 768px) {
+	.frame-right,
+	.frame-left {
+		width: 60%;
+		position: static;
+	}
+}
+
 .frame-right {
 	left: 40px;
     top: 30px;
 }
 
+@media screen and (min-width: 768px) {
+	.frame-right {
+		order: 2;
+	}
+}
+
 .frame-left {
 	right: 40px;
     top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+	.frame-left {
+
+	}
 }
 
 .thumb {
@@ -123,6 +170,8 @@ h2 {
 	background-color: white;
 	padding: 60px 10px 30px;
 	border-top: solid 5px #F39629;
+	width: 100%;
+    margin: 0 auto;
 }
 
 .info h3,
@@ -162,6 +211,10 @@ h2 {
 .phone h3,
 .email h3 {
 	margin-bottom: 0;
+}
+
+.email a {
+	margin: 16px auto;
 }
 
 footer {
